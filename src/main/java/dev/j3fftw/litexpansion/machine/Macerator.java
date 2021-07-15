@@ -77,7 +77,7 @@ public class Macerator extends AContainer implements PoweredMachine {
     @Nonnull
     @Override
     public String getInventoryTitle() {
-        return "&6Macerator";
+        return "&6粉碎机";
     }
 
     @Nonnull
