@@ -6,7 +6,7 @@
 
     <groupId>dev.j3fftw</groupId>
     <artifactId>LiteXpansion</artifactId>
-    <version>MODIFIED</version>
+    <version>DEV-154-zh_CN</version>
 
     <repositories>
         <repository>
@@ -54,15 +54,15 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.Slimefun-Addon-Community</groupId>
+            <groupId>com.github.ybw0014</groupId>
             <artifactId>extrautils</artifactId>
-            <version>c852937de5</version>
+            <version>921521c111</version>
         </dependency>
     </dependencies>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
-        <finalName>${project.artifactId}</finalName>
+        <finalName>${project.artifactId}-${project.version}</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 
         <resources>

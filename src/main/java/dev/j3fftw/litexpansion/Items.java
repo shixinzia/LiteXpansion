@@ -26,7 +26,7 @@ public final class Items {
     public static final Category LITEXPANSION = new Category(
         new NamespacedKey(LiteXpansion.getInstance(), "litexpansion"),
         new CustomItem(SkullItem.fromHash("3f87fc5cbb233743a82fb0fa51fe739487f29bcc01c9026621ecefad197f4fb1"),
-            "&7LiteXpansion")
+            "&7工业(LiteXpansion)")
     );
     public static final SlimefunItemStack ELECTRIC_CHESTPLATE = new SlimefunItemStack(
         "ELECTRIC_CHESTPLATE",
@@ -79,9 +79,9 @@ public final class Items {
     public static final SlimefunItemStack DIAMOND_DRILL = new SlimefunItemStack(
         "DIAMOND_DRILL",
         Material.DIAMOND_SHOVEL,
-        "&b钻石钻头",
+        "&b钻石采矿钻头",
         "",
-        "&7快速破坏任何岩石和黑曜石",
+        "&7快速破坏任何岩石与黑曜石",
         "&7右键缓慢破坏",
         "",
         "&c&o&8\u21E8 &e\u26A1 &70 / 1000 J"
@@ -155,7 +155,7 @@ public final class Items {
         "&8钍",
         "",
         LoreBuilder.radioactive(Radioactivity.HIGH),
-        LoreBuilder.HAZMAT_SUIT_REQUIRED
+        "&8\u21E8 &4需要防化服!"
     );
 
     public static final SlimefunItemStack SCRAP = new SlimefunItemStack(
@@ -271,7 +271,7 @@ public final class Items {
     public static final SlimefunItemStack REINFORCED_STONE = new SlimefunItemStack(
         "REINFORCED_STONE",
         Material.STONE,
-        "&7强化原石"
+        "&7强化圆石"
     );
     public static final SlimefunItemStack REINFORCED_DOOR = new SlimefunItemStack(
         "REINFORCED_DOOR",
@@ -294,7 +294,7 @@ public final class Items {
         Material.BLACK_CONCRETE,
         "&8回收机",
         "",
-        "&f从任何物品中回收出 &8废料",
+        "&f回收任何物品来获得 &8废料",
         "",
         LoreBuilderDynamic.powerBuffer(Recycler.CAPACITY),
         LoreBuilderDynamic.powerPerTick(Recycler.ENERGY_CONSUMPTION)
@@ -323,7 +323,10 @@ public final class Items {
     public static final SlimefunItemStack MACERATOR = new SlimefunItemStack(
         "MACERATOR",
         Material.IRON_BLOCK,
-        "&7粉碎机"
+        "&7粉碎机",
+        "",
+        "&7可以粉碎很多东西",
+        ""
     );
     //// Solar panels
     public static final SlimefunItemStack ADVANCED_SOLAR_PANEL = new SlimefunItemStack(
@@ -396,7 +399,7 @@ public final class Items {
     public static final SlimefunItemStack METAL_FORGE = new SlimefunItemStack(
         "METAL_FORGE",
         Material.DISPENSER,
-        "&7金属锻造炉"
+        "&7金属冶炼炉"
     );
 
     public static final SlimefunItemStack MANUAL_MILL = new SlimefunItemStack(
