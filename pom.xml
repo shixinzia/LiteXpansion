@@ -6,7 +6,7 @@
 
     <groupId>dev.j3fftw</groupId>
     <artifactId>LiteXpansion</artifactId>
-    <version>DEV-154-zh_CN</version>
+    <version>DEV-154-zh_CN-patch-1</version>
 
     <repositories>
         <repository>

@@ -1,79 +1,90 @@
-# LiteXpansion
-LiteXpansion is a Slimefun4 Addon that started with adding the use full items/machines from SlimeXpansion. This slowly is changing into an Industrial Craft 2 Addon.
+# LiteXpansion 工业
 
-## :world_map: Navigation
-* [Download](#floppy_disk-download)
-* [Contents](#contents)
-  * [Items](#card_index_dividers-items)
-  * [Machines](#electric_plug-machines)
-  * [Tools](#hammer_and_wrench-tools)
-  * [Weapons](#crossed_swords-weapons)
-  * [Armour](#shield-armour)
-  * [UU Matter](#brain-uu-matter)
+LiteXpansion 是一个 Slimefun4 的附属插件，继承了来自 SlimeXpansion 的所有物品与部分功能。开发者正努力让此附属能提供类似工业2(IC2)模组的体验。
+
+## :world_map: 目录
+
+* [下载](#floppy_disk-download)
+* [内容](#contents)
+  * [物品](#card_index_dividers-items)
+  * [机器](#electric_plug-machines)
+  * [工具](#hammer_and_wrench-tools)
+  * [武器](#crossed_swords-weapons)
+  * [护甲](#shield-armour)
+  * [UU物质](#brain-uu-matter)
 * [Discord](#computer-discord)
 
-## :floppy_disk: Download
-To download LiteXpansion please click here: [Download LiteXpansion](https://thebusybiscuit.github.io/builds/J3fftw1/LiteXpansion/master/)
+## :floppy_disk: 下载
 
-**IMPORTANT: As mentioned before, you have to have Slimefun to use LiteXpansion. If you do not have Slimefun yet please go here: [Slimefun repository](https://github.com/Slimefun/Slimefun4). If you have problems with the download please go here: [Slimefun Wiki](https://github.com/Slimefun/Slimefun4/wiki/Installing-Slimefun)**
+点击这里下载 LiteXpansion: [下载 LiteXpansion](https://github.com/ybw0014/LiteXpansion/actions/workflows/build.yml)
+
+**重要: 你必须安装 Slimefun 才能使用 LiteXpansion. 如果你还没有安装 Slimefun，请前往这里下载: [Slimefun 汉化版](https://github.com/StarWishsama/Slimefun4/releases)**
 
 <p align="center">
-  <a href="https://thebusybiscuit.github.io/builds/J3fftw1/LiteXpansion/master/">
-    <img src="https://thebusybiscuit.github.io/builds/J3fftw1/LiteXpansion/master/badge.svg" alt="Build Server"/>
+  <a href="https://github.com/ybw0014/LiteXpansion/actions/workflows/build.yml">
+    <img src="https://github.com/ybw0014/LiteXpansion/actions/workflows/build.yml/badge.svg" alt="Build status"/>
   </a>
 </p>
 
-## Contents
-### :card_index_dividers: Items
-- Food Synthesizer - Keeps you fed with artificial food;
-- Mag Thor - An extremely durable alloy used;
-- Thorium - A radioactive alloy;
-- Mag Thor Dust - ; (W.I.P., doesn't have a function yet)
-- Thorium Dust - ; (W.I.P., doesn't have a function yet)
-- Scrap - Used to create UU-Matter;
-- UU-Matter - Used to create various other items;
-- Iridium - ; (W.I.P., doesn't have a function yet)
-- Iridium Plate - ; (W.I.P., doesn't have a function yet)
-- Refined Iron - An Ingot to create various other items; (W.I.P., doesn't have a function yet)
-- Machine Block - Used to create Machines; (W.I.P., doesn't have a function yet)
+## 内容
 
-### :electric_plug: Machines
-- Scrap Machine - This machine creates Scrap from every item;
-- Mass Fabricator - Create UU-Matter from Scrap, "takes just a tiny bit of power";
+### :card_index_dividers: 物品
 
-### :hammer_and_wrench: Tools
-- Wrench - Allows you to remove machines without destroying them; (W.I.P., Doesn't have a function yet)
+- 食物合成器 - 用合成的食物填饱你的肚子;
+- 镁钍合金 - 坚如磐石的合金;
+- 钍 - 一种放射性极强的合金;
+- 镁钍合金粉 - ; (制作中，暂无任何用途)
+- 钍粉 - ; (制作中，暂无任何用途)
+- 废料 - 回收任何物品而来，用于制造UU物质;
+- UU物质 - 用于合成任意物品;
+- 铱 - 由UU物质合成而来; (制作中，暂无任何用途)
+- 铱板 - ; (制作中，暂无任何用途)
+- 精炼铁 - 用于制造其他物品/机器;
+- 机器方块 - 用于制造机器;
 
-### :crossed_swords: Weapons
-- Nano Blade - An advanced piece of technology which can cut through organic tissue with ease;
+### :electric_plug: 机器
+- 回收机 - 回收任何物品来获得废料;
+- 物质生成机 - 将废料转换为UU物质, "只需要亿点点电";
 
-### :shield: Armour
-- Electric Chestplate - Negates all the damage dealt to player.;
+### :hammer_and_wrench: 工具
+- 扳手 - 可以快速破坏机器; (制作中，暂无任何用途)
 
-### :brain: UU Matter
-UU-Matter is a hard to create resource, it can be made in the Mass Fabricator with scrap. You can use UU-Matter to create many items such as grass blocks, glass, copper ingots, etc.
+### :crossed_swords: 武器
+- 纳米剑 - 一把高科技的光剑，可以轻松斩断对手;
 
-Server admins are able to modify, add or remove UU-Matter recipes.
-#### :gear: Configuration
-To add, remove or change recipes you need to modify the `/plugins/LiteXpansion/uumatter.yml` file.
+### :shield: 护甲
+- 电动护甲 - 可以抵消任何对玩家造成的伤害;
 
-Under `recipes` you need to specify the output, this can be a [Material](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) or a Slimefun item ID (addons supported). If you want an amount more than one you can add a colon (`:`) and the amount. Then as a list you specify the recipe where space is nothing and `x` is UU-Matter.
+### :brain: UU物质
 
-Here's an example where it generates 20 coal.
+UU物质是一种难以制造的资源，可以在物质生成机中由废料转化而来。你可以使用UU物质制造任何物品，例如草方块、玻璃、铜锭等。
+
+服务器管理员可以修改、添加或删除UU物质的合成配方。
+
+#### :gear: 配置
+
+如需添加、删除或修改配方，你需要修改 `/plugins/LiteXpansion/uumatter.yml` 文件。
+
+在 `recipes` 下，你可以指定输出的物品，这可以是 [原版物品ID](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) 或是 Slimefun 物品ID (支持附属插件)。如果你想让输出的物品数量多于1，你可以在物品ID后面加上一个英文的冒号(`:`)与数量。在接下来的合成表中，`x`代表UU物质，空格为无物品。
+
+以下是一个合成20个煤炭的例子:
+
 ```yaml
 recipes:
-  # Output item, colon (:) to indicate the amount
-  # Accepts Material (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) or Slimefun Item ID
+  # 输出的物品, 使用冒号 (:) 来指定数量
+  # 可使用原版物品ID (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) 或 Slimefun 物品ID
   'COAL:20':
-    # Recipe, x = UU-Matter, space = nothing
+    # 合成表, x = UU物质, 空格 = 无物品
     - '  x'
     - 'x  '
     - '  x'
 ```
 
 ### :computer: Discord
-If you need to find a Slimefun item ID you can join the official Slimefun Discord by clicking the image below this text and doing `!item <name/ID>` in the `#bot-spam` channel.
-You can also generally chat about LiteXpansion in the `#litexpansion` channel.
+
+如果你想找到一个 Slimefun 物品的ID，你可以通过下方的图片链接加入我们的官方 Slimefun Discord 服务器，并在`#bot-spam`频道中发送`!item <name/ID>`即可获取。
+
+你也可以在`#litexpansion`频道中讨论任何有关 LiteXpansion 的内容。
 
 <p align="center">
   <a href="https://discord.gg/slimefun">

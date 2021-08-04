@@ -97,29 +97,29 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
 
     private void setupResearches() {
         new Research(new NamespacedKey(this, "sanitizing_foots"),
-            696969, "Sanitizing  foots since 2k10", 45)
+            696969, "合成食物", 45)
             .addItems(Items.FOOD_SYNTHESIZER)
             .register();
 
         new Research(new NamespacedKey(this, "superalloys"),
-            696970, "Superalloys", 35)
+            696970, "超级合金", 35)
             .addItems(Items.THORIUM, Items.MAG_THOR, Items.IRIDIUM, Items.ADVANCED_ALLOY, Items.MIXED_METAL_INGOT,
                 Items.REFINED_IRON)
             .register();
 
         new Research(new NamespacedKey(this, "super_hot_fire"),
-            696971, "Super Hot Fire", 31)
+            696971, "热火朝天", 31)
             .addItems(Items.NANO_BLADE, Items.ELECTRIC_CHESTPLATE)
             .register();
 
         new Research(new NamespacedKey(this, "machinereee"),
-            696972, "Machinereeeeee", 30)
+            696972, "机器~~~~~~", 30)
             .addItems(Items.METAL_FORGE, Items.REFINED_SMELTERY, Items.RUBBER_SYNTHESIZER_MACHINE, Items.MANUAL_MILL,
                 Items.GENERATOR)
             .register();
 
         new Research(new NamespacedKey(this, "the_better_panel"),
-            696973, "These are the better panels", 45)
+            696973, "更好的太阳能板", 45)
             .addItems(Items.ADVANCED_SOLAR_PANEL, Items.ULTIMATE_SOLAR_PANEL, Items.HYBRID_SOLAR_PANEL)
             .register();
 
@@ -129,54 +129,55 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
             .register();
 
         new Research(new NamespacedKey(this, "what_a_configuration"),
-            696975, "What a configuration", 39)
+            696975, "配置器", 39)
             .addItems(Items.CARGO_CONFIGURATOR)
             .register();
 
         new Research(new NamespacedKey(this, "platings"),
-            696976, "Platings", 40)
+            696976, "板", 40)
             .addItems(Items.IRIDIUM_PLATE, Items.COPPER_PLATE, Items.TIN_PLATE, Items.DIAMOND_PLATE, Items.IRON_PLATE,
                 Items.GOLD_PLATE, Items.THORIUM_PLATE)
             .register();
 
         new Research(new NamespacedKey(this, "rubber"),
-            696977, "Rubber", 25)
+            696977, "橡胶", 25)
             .addItems(Items.RUBBER)
             .register();
 
         new Research(new NamespacedKey(this, "circuits"),
-            696978, "Circuits", 25)
+            696978, "电路", 25)
             .addItems(Items.ELECTRONIC_CIRCUIT, Items.ADVANCED_CIRCUIT)
             .register();
 
         new Research(new NamespacedKey(this, "reinforcement_is_coming"),
-            696979, "Reinforcement is coming", 15)
+            696979, "强化降临", 15)
             .addItems(Items.REINFORCED_DOOR, Items.REINFORCED_GLASS, Items.REINFORCED_STONE)
             .register();
 
         new Research(new NamespacedKey(this, "only_glass"),
-            696980, "Only glass", 40)
+            696980, "只有玻璃", 40)
             .addItems(Items.GLASS_CUTTER)
             .register();
 
         new Research(new NamespacedKey(this, "machine_blocks"),
-            696981, "Machine Blocks", 35)
+            696981, "机器方块", 35)
             .addItems(Items.MACHINE_BLOCK, Items.ADVANCED_MACHINE_BLOCK)
             .register();
 
         new Research(new NamespacedKey(this, "coal_mesh"),
-            696982, "Coal mesh", 30)
+            696982, "碳网", 30)
             .addItems(Items.COAL_DUST, Items.RAW_CARBON_MESH, Items.RAW_CARBON_FIBRE, Items.CARBON_PLATE)
             .register();
 
         new Research(new NamespacedKey(this, "what_are_these_cables"),
-            696983, "What are these cables", 25)
+            696983, "这些是什么导线?", 25)
             .addItems(Items.UNINSULATED_COPPER_CABLE, Items.COPPER_CABLE,
-                Items.UNINSULATED_COPPER_CABLE, Items.TIN_CABLE)
+                    Items.UNINSULATED_TIN_CABLE, Items.TIN_CABLE,
+                    Items.UNINSULATED_GOLD_CABLE, Items.GOLD_CABLE)
             .register();
 
         new Research(new NamespacedKey(this, "triple_a"),
-            696984, "Triple a", 20)
+            696984, "3A", 20)
             .addItems(Items.RE_BATTERY)
             .register();
 
@@ -186,7 +187,7 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
             .register();
 
         new Research(new NamespacedKey(this, "solar_helmets"),
-            696986, "More solar helmets", 30)
+            696986, "更多的太阳能头盔", 30)
             .addItems(Items.HYBRID_SOLAR_HELMET, Items.ADVANCED_SOLAR_HELMET, Items.ADVANCEDLX_SOLAR_HELMET,
                 Items.CARBONADO_SOLAR_HELMET, Items.ENERGIZED_SOLAR_HELMET, Items.ULTIMATE_SOLAR_HELMET)
             .register();
