@@ -4,25 +4,25 @@ LiteXpansion 是一个 Slimefun4 的附属插件，继承了来自 SlimeXpansion
 
 ## :world_map: 目录
 
-* [下载](#floppy_disk-download)
-* [内容](#contents)
-  * [物品](#card_index_dividers-items)
-  * [机器](#electric_plug-machines)
-  * [工具](#hammer_and_wrench-tools)
-  * [武器](#crossed_swords-weapons)
-  * [护甲](#shield-armour)
-  * [UU物质](#brain-uu-matter)
+* [下载](#floppy_disk-下载)
+* [内容](#内容)
+  * [物品](#card_index_dividers-物品)
+  * [机器](#electric_plug-机器)
+  * [工具](#hammer_and_wrench-工具)
+  * [武器](#crossed_swords-武器)
+  * [护甲](#shield-护甲)
+  * [UU物质](#brain-uu物质)
 * [Discord](#computer-discord)
 
 ## :floppy_disk: 下载
 
-点击这里下载 LiteXpansion: [下载 LiteXpansion](https://github.com/ybw0014/LiteXpansion/actions/workflows/build.yml)
+点击这里下载 LiteXpansion: [下载 LiteXpansion](https://github.com/ybw0014/LiteXpansion/actions/workflows/maven.yml)
 
 **重要: 你必须安装 Slimefun 才能使用 LiteXpansion. 如果你还没有安装 Slimefun，请前往这里下载: [Slimefun 汉化版](https://github.com/StarWishsama/Slimefun4/releases)**
 
 <p align="center">
-  <a href="https://github.com/ybw0014/LiteXpansion/actions/workflows/build.yml">
-    <img src="https://github.com/ybw0014/LiteXpansion/actions/workflows/build.yml/badge.svg" alt="Build status"/>
+  <a href="https://github.com/ybw0014/LiteXpansion/actions/workflows/maven.yml">
+    <img src="https://github.com/ybw0014/LiteXpansion/actions/workflows/maven.yml/badge.svg" alt="Build status"/>
   </a>
 </p>
 
