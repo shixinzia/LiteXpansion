@@ -6,7 +6,7 @@
 
     <groupId>dev.j3fftw</groupId>
     <artifactId>LiteXpansion</artifactId>
-    <version>DEV-154-zh_CN-patch-1</version>
+    <version>DEV-155-zh_CN</version>
 
     <repositories>
         <repository>
@@ -23,14 +23,14 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.17-R0.1-SNAPSHOT</version>
+            <version>1.17.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.Slimefun</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>RC-26</version>
+            <version>RC-27</version>
             <scope>provided</scope>
         </dependency>
 
@@ -56,7 +56,7 @@
         <dependency>
             <groupId>com.github.ybw0014</groupId>
             <artifactId>extrautils</artifactId>
-            <version>921521c111</version>
+            <version>bf89aee6ae</version>
         </dependency>
     </dependencies>
 

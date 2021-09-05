@@ -7,27 +7,31 @@ import dev.j3fftw.litexpansion.machine.RubberSynthesizer;
 import dev.j3fftw.litexpansion.machine.generators.AdvancedSolarPanel;
 import dev.j3fftw.litexpansion.utils.Constants;
 import dev.j3fftw.litexpansion.weapons.NanoBlade;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.core.attributes.Radioactivity;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerHead;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerSkin;
 import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
-import me.mrCookieSlime.Slimefun.Objects.Category;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
-import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
-import me.mrCookieSlime.Slimefun.cscorelib2.skull.SkullItem;
 import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
 
-import javax.annotation.Nonnull;
-
 public final class Items {
 
     //region Category
-    public static final Category LITEXPANSION = new Category(
-        new NamespacedKey(LiteXpansion.getInstance(), "litexpansion"),
-        new CustomItem(SkullItem.fromHash("3f87fc5cbb233743a82fb0fa51fe739487f29bcc01c9026621ecefad197f4fb1"),
-            "&7工业(LiteXpansion)")
+    public static final ItemGroup LITEXPANSION = new ItemGroup(
+        new NamespacedKey(LiteXpansion.getInstance(),
+            "litexpansion"
+        ),
+        new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
+            "3f87fc5cbb233743a82fb0fa51fe739487f29bcc01c9026621ecefad197f4fb1")),
+            "&7工业(LiteXpansion)"
+        )
     );
+
     public static final SlimefunItemStack ELECTRIC_CHESTPLATE = new SlimefunItemStack(
         "ELECTRIC_CHESTPLATE",
         Material.LEATHER_CHESTPLATE, Color.TEAL,
@@ -150,8 +154,10 @@ public final class Items {
 
     public static final SlimefunItemStack THORIUM = new SlimefunItemStack(
         "THORIUM",
-        new CustomItem(SkullItem.fromHash("b87403257c0eaa518cf186deccde137d476556ccff146d503fb2e73956582f37"),
-            "Thorium"),
+        new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
+            "b87403257c0eaa518cf186deccde137d476556ccff146d503fb2e73956582f37")),
+            "钍"
+        ),
         "&8钍",
         "",
         LoreBuilder.radioactive(Radioactivity.HIGH),
@@ -458,7 +464,8 @@ public final class Items {
 
     public static final SlimefunItemStack FOOD_SYNTHESIZER = new SlimefunItemStack(
         "FOOD_SYNTHESIZER",
-        new CustomItem(SkullItem.fromHash("a967efe969d264f635f2c201c34381ef59c72e16ec50af7692033121e22fba9c"),
+        new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
+            "a967efe969d264f635f2c201c34381ef59c72e16ec50af7692033121e22fba9c")),
             "食物合成器"),
         "&d食物合成器",
         "",
