@@ -19,7 +19,7 @@ jobs:
           java-package: jdk
           architecture: x64
       - run: mvn -B package --file pom.xml --errors
-      - run: mkdir staging && cp target/ExoticGarden-*.jar staging
+      - run: mkdir staging && cp target/LiteXpansion-*.jar staging
       - uses: actions/cache@v2
         with:
           path: ~/.m2
@@ -27,5 +27,5 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - uses: actions/upload-artifact@v2
         with:
-          name: ExoticGarden.jar
+          name: LiteXpansion.jar
           path: staging
