@@ -16,7 +16,7 @@ LiteXpansion 是一个 Slimefun4 的附属插件，继承了来自 SlimeXpansion
 
 ## :floppy_disk: 下载
 
-点击这里下载 LiteXpansion: [下载 LiteXpansion](https://github.com/ybw0014/LiteXpansion-CN/actions/workflows/build.yml)
+点击这里下载 LiteXpansion: [下载 LiteXpansion](https://builds.guizhanss.net/ybw0014/LiteXpansion-CN/master)
 
 **重要: 你必须安装 Slimefun 才能使用 LiteXpansion. 如果你还没有安装 Slimefun，请前往这里下载: [Slimefun 汉化版](https://github.com/StarWishsama/Slimefun4/releases)**
 
@@ -25,8 +25,8 @@ LiteXpansion 是一个 Slimefun4 的附属插件，继承了来自 SlimeXpansion
     <img src="https://github.com/ybw0014/LiteXpansion-CN/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
   </a>
 
-  <a href="https://github.com/ybw0014/LiteXpansion-CN/actions/workflows/build.yml">
-    <img src="https://github.com/ybw0014/LiteXpansion-CN/actions/workflows/build.yml/badge.svg" alt="Auto Build"/>
+  <a href="https://builds.guizhanss.net/ybw0014/LiteXpansion-CN/master">
+    <img src="https://builds.guizhanss.net/f/ybw0014/LiteXpansion-CN/master/badge.svg" alt="Build status"/>
   </a>
 </p>
 
