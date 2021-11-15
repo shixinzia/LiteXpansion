@@ -18,6 +18,7 @@ import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Slime;
 
 public final class Items {
 
@@ -541,6 +542,12 @@ public final class Items {
         "ANCIENT_DEBRIS_DUST",
         Material.BROWN_DYE,
         "&7远古残骸粉"
+    );
+
+    public static final SlimefunItemStack UU_CRAFTER = new SlimefunItemStack(
+        "UU_CRAFTER",
+        Material.CRAFTING_TABLE,
+        "&7UU Crafter"
     );
 
     private static final Enchantment glowEnchant = Enchantment.getByKey(Constants.GLOW_ENCHANT);
