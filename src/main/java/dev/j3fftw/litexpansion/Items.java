@@ -547,7 +547,7 @@ public final class Items {
     public static final SlimefunItemStack UU_CRAFTER = new SlimefunItemStack(
         "UU_CRAFTER",
         Material.CRAFTING_TABLE,
-        "&7UU Crafter"
+        "&7UU合成机"
     );
 
     private static final Enchantment glowEnchant = Enchantment.getByKey(Constants.GLOW_ENCHANT);
