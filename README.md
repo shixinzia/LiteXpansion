@@ -84,14 +84,15 @@ recipes:
     - '  x'
 ```
 
+在 `/plugins/LiteXpansion/config.yml` 文件中，可以修改两个配置项：
+
+- `auto-update` - 启用后会开启自动更新 (默认: `true`)
+- `nerf-other-addons` - 启用后会削弱充能太阳能板以及无尽科技中的所有发电机，禁用则会使本附属插件中机器电力消耗翻倍 (默认: `true`)
+
 ### :computer: Discord
 
 如果你想找到一个 Slimefun 物品的ID，你可以通过下方的图片链接加入我们的官方 Slimefun Discord 服务器，并在`#bot-spam`频道中发送`!item <name/ID>`即可获取。
 
 你也可以在`#litexpansion`频道中讨论任何有关 LiteXpansion 的内容。
 
-<p align="center">
-  <a href="https://discord.gg/slimefun">
-    <img src="https://discordapp.com/api/guilds/565557184348422174/widget.png?style=banner3" alt="Discord Invite"/>
-  </a>
-</p>
+[加入Slimefun 官方Discord服务器](https://discord.gg/slimefun)
