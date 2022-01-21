@@ -58,6 +58,13 @@
             <artifactId>extrautils</artifactId>
             <version>bf89aee6ae</version>
         </dependency>
+
+        <dependency>
+            <groupId>net.guizhanss</groupId>
+            <artifactId>guizhanlib</artifactId>
+            <version>0.5.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -97,7 +104,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>2.3</version>
+                <version>3.2.4</version>
                 <executions>
                     <execution>
                         <goals>
@@ -107,6 +114,7 @@
                 </executions>
 
                 <configuration>
+                    <minimizeJar>true</minimizeJar>
                     <relocations>
                         <relocation>
                             <pattern>org.bstats</pattern>
@@ -116,6 +124,11 @@
                         <relocation>
                             <pattern>dev.j3fftw.extrautils</pattern>
                             <shadedPattern>dev.j3fftw.litexpansion.extrautils</shadedPattern>
+                        </relocation>
+
+                        <relocation>
+                            <pattern>net.guizhanss.guizhanlib</pattern>
+                            <shadedPattern>dev.j3fftw.litexpansion.guizhanlib</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
