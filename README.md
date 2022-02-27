@@ -87,7 +87,7 @@ recipes:
 在 `/plugins/LiteXpansion/config.yml` 文件中，可以修改两个配置项：
 
 - `auto-update` - 启用后会开启自动更新 (默认: `true`)
-- `nerf-other-addons` - 启用后会削弱充能太阳能板以及无尽科技中的所有发电机，禁用则会使本附属插件中机器电力消耗翻倍 (默认: `true`)
+- `nerf-other-addons` - 启用后会削弱充能太阳能板，无尽科技中的所有发电机，战争工艺的元素发电机，以及星际中的聚变反应堆，禁用则会使本附属插件中机器电力消耗翻倍 (默认: `true`)
 
 ### :computer: Discord
 
