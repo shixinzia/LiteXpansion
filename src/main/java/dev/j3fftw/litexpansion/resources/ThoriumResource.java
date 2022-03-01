@@ -36,7 +36,7 @@ public class ThoriumResource implements GEOResource {
 
     @Override
     public int getDefaultSupply(@Nonnull World.Environment environment, Biome biome) {
-        return 1;
+        return map.getOrDefault(biome, 1);
     }
 
     @Nonnull
