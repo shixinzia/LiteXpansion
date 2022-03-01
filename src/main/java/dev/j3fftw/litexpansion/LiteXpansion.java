@@ -104,10 +104,10 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
         // Galactifun
         Reflections.setField(SlimefunItem.getById("FUSION_REACTOR"), "energyProducedPerTick", 8_192);
 
-        final Plugin thereIsNoReasonForThis = getServer().getPluginManager().getPlugin("SlimefunWarfare");
+        /*final Plugin thereIsNoReasonForThis = getServer().getPluginManager().getPlugin("SlimefunWarfare");
         if (thereIsNoReasonForThis != null) {
             getServer().getPluginManager().disablePlugin(thereIsNoReasonForThis);
-        }
+        }*/
 
     }
 
