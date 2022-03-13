@@ -14,7 +14,6 @@ import org.bstats.MetricsBase;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import javax.annotation.Nonnull;
@@ -39,7 +38,7 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
 
         if (getConfig().getBoolean("options.auto-update") &&
                 getDescription().getVersion().startsWith("Build")) {
-            new GuizhanBuildsUpdater(this, getFile(), "ybw0014", "LiteXpansion-CN", "master", false).start();
+            new GuizhanBuildsUpdater(this, getFile(), "ybw0014", "LiteXpansion", "master", false).start();
         }
 
         registerEnchantments();
@@ -103,12 +102,6 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
 
         // Galactifun
         Reflections.setField(SlimefunItem.getById("FUSION_REACTOR"), "energyProducedPerTick", 8_192);
-
-        /*final Plugin thereIsNoReasonForThis = getServer().getPluginManager().getPlugin("SlimefunWarfare");
-        if (thereIsNoReasonForThis != null) {
-            getServer().getPluginManager().disablePlugin(thereIsNoReasonForThis);
-        }*/
-
     }
 
     private void setupResearches() {
