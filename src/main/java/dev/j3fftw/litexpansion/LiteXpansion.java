@@ -104,13 +104,13 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
         Reflections.setField(SlimefunItem.getById("FUSION_REACTOR"), "energyProducedPerTick", 8_192);
 
         // SupremeExpansion - just no...
-        Reflections.setField(SlimefunItem.getById("SUPREME_GENERATOR"), "energyProducedPerTick", 20_000);
-        Reflections.setField(SlimefunItem.getById("THORNIUM_GENERATOR"), "energyProducedPerTick", 10_000);
-        Reflections.setField(SlimefunItem.getById("LUMIUM_GENERATOR"), "energyProducedPerTick", 5_000);
-        Reflections.setField(SlimefunItem.getById("LUX_GENERATOR"), "energyProducedPerTick", 2_500);
-        Reflections.setField(SlimefunItem.getById("AQUA_GENERATOR"), "energyProducedPerTick", 2_500);
-        Reflections.setField(SlimefunItem.getById("VENUS_GENERATOR"), "energyProducedPerTick", 2_500);
-        Reflections.setField(SlimefunItem.getById("IGNIS_GENERATOR"), "energyProducedPerTick", 2_500);
+        Reflections.setField(SlimefunItem.getById("SUPREME_GENERATOR"), "energy", 20_000);
+        Reflections.setField(SlimefunItem.getById("THORNIUM_GENERATOR"), "energy", 10_000);
+        Reflections.setField(SlimefunItem.getById("LUMIUM_GENERATOR"), "energy", 5_000);
+        Reflections.setField(SlimefunItem.getById("LUX_GENERATOR"), "energy", 2_500);
+        Reflections.setField(SlimefunItem.getById("AQUA_GENERATOR"), "energy", 2_500);
+        Reflections.setField(SlimefunItem.getById("VENUS_GENERATOR"), "energy", 2_500);
+        Reflections.setField(SlimefunItem.getById("IGNIS_GENERATOR"), "energy", 2_500);
     }
 
     private void setupResearches() {
