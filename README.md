@@ -2,23 +2,9 @@
 
 LiteXpansion 是一个 Slimefun4 的附属插件，继承了来自 SlimeXpansion 的所有物品与部分功能。开发者正努力让此附属能提供类似工业2(IC2)模组的体验。
 
-## :world_map: 目录
-
-* [下载](#floppy_disk-下载)
-* [内容](#内容)
-  * [物品](#card_index_dividers-物品)
-  * [机器](#electric_plug-机器)
-  * [工具](#hammer_and_wrench-工具)
-  * [武器](#crossed_swords-武器)
-  * [护甲](#shield-护甲)
-  * [UU物质](#brain-uu物质)
-* [Discord](#computer-discord)
-
 ## :floppy_disk: 下载
 
 点击这里下载 LiteXpansion: [下载 LiteXpansion](https://builds.guizhanss.net/ybw0014/LiteXpansion-CN/master)
-
-**重要: 你必须安装 Slimefun 才能使用 LiteXpansion. 如果你还没有安装 Slimefun，请前往这里下载: [Slimefun 汉化版](https://github.com/StarWishsama/Slimefun4/releases)**
 
 <p align="center">
   <a href="https://github.com/ybw0014/LiteXpansion-CN/actions/workflows/maven.yml">
@@ -30,42 +16,21 @@ LiteXpansion 是一个 Slimefun4 的附属插件，继承了来自 SlimeXpansion
   </a>
 </p>
 
-## 内容
+## :gear: 配置
 
-### :card_index_dividers: 物品
+### config.yml
 
-- 食物合成器 - 用合成的食物填饱你的肚子;
-- 镁钍合金 - 坚如磐石的合金;
-- 钍 - 一种放射性极强的合金;
-- 镁钍合金粉 - ; (制作中，暂无任何用途)
-- 钍粉 - ; (制作中，暂无任何用途)
-- 废料 - 回收任何物品而来，用于制造UU物质;
-- UU物质 - 用于合成任意物品;
-- 铱 - 由UU物质合成而来; (制作中，暂无任何用途)
-- 铱板 - ; (制作中，暂无任何用途)
-- 精炼铁 - 用于制造其他物品/机器;
-- 机器方块 - 用于制造机器;
+你可以修改两个配置项：
 
-### :electric_plug: 机器
-- 回收机 - 回收任何物品来获得废料;
-- 物质生成机 - 将废料转换为UU物质, "只需要亿点点电";
+- `auto-update` - 启用后会开启自动更新 (默认: `true`)
+- `nerf-other-addons` - 启用后会削弱其他附属中的发电机（下方已列出），禁用则会使本附属插件中机器电力消耗翻倍 (默认: `true`)
+  - 粘液科技 - 充能太阳能板
+  - 无尽科技 - 所有发电机
+  - 战争工艺 - 元素发电机
+  - 星际 - 聚变反应堆
+  - 至尊研究院 - 所有发电机
 
-### :hammer_and_wrench: 工具
-- 扳手 - 可以快速破坏机器; (制作中，暂无任何用途)
-
-### :crossed_swords: 武器
-- 纳米剑 - 一把高科技的光剑，可以轻松斩断对手;
-
-### :shield: 护甲
-- 电动护甲 - 可以抵消任何对玩家造成的伤害;
-
-### :brain: UU物质
-
-UU物质是一种难以制造的资源，可以在物质生成机中由废料转化而来。你可以使用UU物质制造任何物品，例如草方块、玻璃、铜锭等。
-
-服务器管理员可以修改、添加或删除UU物质的合成配方。
-
-#### :gear: 配置
+### uumatter.yml
 
 如需添加、删除或修改配方，你需要修改 `/plugins/LiteXpansion/uumatter.yml` 文件。
 
@@ -83,11 +48,6 @@ recipes:
     - 'x  '
     - '  x'
 ```
-
-在 `/plugins/LiteXpansion/config.yml` 文件中，可以修改两个配置项：
-
-- `auto-update` - 启用后会开启自动更新 (默认: `true`)
-- `nerf-other-addons` - 启用后会削弱充能太阳能板，无尽科技中的所有发电机，战争工艺的元素发电机，以及星际中的聚变反应堆，禁用则会使本附属插件中机器电力消耗翻倍 (默认: `true`)
 
 ### :computer: Discord
 

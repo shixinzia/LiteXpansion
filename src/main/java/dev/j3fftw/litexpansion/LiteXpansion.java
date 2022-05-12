@@ -18,6 +18,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import javax.annotation.Nonnull;
 import java.io.File;
+import java.util.logging.Level;
 
 public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
 
@@ -83,6 +84,14 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
     }
 
     private void nerfCrap() {
+        getLogger().log(Level.WARNING, "###########################################");
+        getLogger().log(Level.WARNING, " LiteXpansion 已开启削弱其他附属的发电机效率 ");
+        getLogger().log(Level.WARNING, " 你可以在 LiteXpansion 附属的配置文件中关闭削弱 ");
+        getLogger().log(Level.WARNING, " 设置 options.nerf-other-addons 为 false ");
+        getLogger().log(Level.WARNING, "###########################################");
+        getLogger().log(Level.SEVERE, " 如果你不是韩宗那你一定能看到上面这段话吧 ");
+        getLogger().log(Level.WARNING, "###########################################");
+
         // Vanilla SF
         final SlimefunItem energizedPanel = SlimefunItem.getById("SOLAR_GENERATOR_4");
         if (energizedPanel != null) {
@@ -222,7 +231,7 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
     }
 
     public String getBugTrackerURL() {
-        return "https://github.com/ybw0014/LiteXpansion/issues";
+        return "https://github.com/SlimefunGuguProject/LiteXpansion/issues";
     }
 
     public static LiteXpansion getInstance() {
