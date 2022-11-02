@@ -21,14 +21,18 @@ import net.md_5.bungee.api.chat.ComponentBuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.block.Block;
+import org.bukkit.entity.Cat;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.EntitySpawnEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
@@ -41,6 +45,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Events implements Listener {
 
@@ -68,9 +73,8 @@ public class Events implements Listener {
      */
     @EventHandler
     public void onPlayerDamage(EntityDamageEvent e) {
-        if (e.getEntity() instanceof Player && ((Player) e.getEntity()).getEquipment() != null) {
-            final Player p = (Player) e.getEntity();
-            final ItemStack chestplate = p.getEquipment().getChestplate();
+        if (e.getEntity() instanceof Player player && player.getEquipment() != null) {
+            final ItemStack chestplate = player.getEquipment().getChestplate();
             if (e.getFinalDamage() > 0
                 && chestplate != null
                 && electricChestplate.isItem(chestplate)
@@ -88,12 +92,11 @@ public class Events implements Listener {
                     .append(String.valueOf(electricChestplate.getItemCharge(chestplate))).color(ChatColor.YELLOW)
                     .append(" J");
 
-                if (meta instanceof Damageable) {
+                if (meta instanceof Damageable damageable) {
                     final double chargePercent = (newCharge / electricChestplate.getMaxItemCharge(chestplate)) * 100;
                     final int percentOfMax = (int) ((chargePercent / 100) * chestplate.getType().getMaxDurability());
                     final int damage = Math.max(1, chestplate.getType().getMaxDurability() - percentOfMax);
-                    ((Damageable) meta).setDamage(damage);
-
+                    damageable.setDamage(damage);
                     chestplate.setItemMeta(meta);
                 }
 
@@ -127,11 +130,11 @@ public class Events implements Listener {
     @EventHandler
     public void onHungerDamage(EntityDamageEvent e) {
         if (e.getCause() == EntityDamageEvent.DamageCause.STARVATION
-            && e.getEntity() instanceof Player
+            && e.getEntity() instanceof Player player
             && Items.FOOD_SYNTHESIZER != null
             && !Items.FOOD_SYNTHESIZER.getItem().isDisabled()
         ) {
-            checkAndConsume((Player) e.getEntity(), null);
+            checkAndConsume(player, null);
         }
     }
 
@@ -181,7 +184,7 @@ public class Events implements Listener {
         }
 
         final MiningDrill diamondDrill = (MiningDrill) SlimefunItem.getById(Items.DIAMOND_DRILL.getItemId());
-        if (diamondDrill.isItem(hand)) {
+        if (diamondDrill != null && diamondDrill.isItem(hand)) {
 
             if (!check(diamondDrill, event, blockLocation)) {
                 return;
@@ -214,10 +217,6 @@ public class Events implements Listener {
             return;
         }
 
-        if (!(slimefunItem instanceof Rechargeable)) {
-            return;
-        }
-
         final Rechargeable item = (Rechargeable) SlimefunItem.getByItem(event.getItem());
 
         if (item == null) {
@@ -230,10 +229,6 @@ public class Events implements Listener {
 
         BlockBreakEvent newEvent = new BlockBreakEvent(block, event.getPlayer());
         Bukkit.getServer().getPluginManager().callEvent(newEvent);
-
-        if (event.isCancelled()) {
-            return;
-        }
 
         block.setType(Material.AIR);
         event.getPlayer().playSound(blockLocation, Sound.BLOCK_STONE_BREAK, 1.5F, 1F);
@@ -328,4 +323,25 @@ public class Events implements Listener {
             }
         }
     }
+
+    /**
+     * Rest In Peace Kleintje aka Chunker 9/16/2022
+     * You will be missed
+     * <p>
+     * This event is dedicated to my cat Kleintje also
+     * known as Chunker
+     */
+    @EventHandler
+    public void onCatSpawn(EntitySpawnEvent event) {
+        Entity entity = event.getEntity();
+        if (entity instanceof Cat cat) {
+            int randomNumber = ThreadLocalRandom.current().nextInt(0, 100_000);
+            if (cat.getCatType() == Cat.Type.RED && randomNumber == 91622) {
+                OfflinePlayer player = Bukkit.getOfflinePlayer("22815ad5-2a54-44c0-8f83-f65cfe5310f8"); // _lagpc_
+                entity.setCustomName("Kleintje");
+                ((Cat) entity).setOwner(player);
+            }
+        }
+    }
 }
+
