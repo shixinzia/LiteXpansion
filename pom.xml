@@ -54,16 +54,16 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.ybw0014</groupId>
+            <groupId>com.github.SlimefunGuguProject</groupId>
             <artifactId>extrautils</artifactId>
             <version>bf89aee6ae</version>
         </dependency>
 
         <dependency>
             <groupId>net.guizhanss</groupId>
-            <artifactId>GuizhanLib</artifactId>
-            <version>0.9.7</version>
-            <scope>compile</scope>
+            <artifactId>GuizhanLibPlugin</artifactId>
+            <version>1.1.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -125,11 +125,6 @@
                         <relocation>
                             <pattern>dev.j3fftw.extrautils</pattern>
                             <shadedPattern>dev.j3fftw.litexpansion.extrautils</shadedPattern>
-                        </relocation>
-
-                        <relocation>
-                            <pattern>net.guizhanss.guizhanlib</pattern>
-                            <shadedPattern>dev.j3fftw.litexpansion.guizhanlib</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>

@@ -9,7 +9,7 @@ import dev.j3fftw.litexpansion.uumatter.UUMatter;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.researches.Research;
-import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
+import net.guizhanss.guizhanlibplugin.updater.GuizhanBuildsUpdaterWrapper;
 import org.bstats.MetricsBase;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.NamespacedKey;
@@ -37,9 +37,8 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
         final Metrics metrics = new Metrics(this, 7111);
         metricsService.setup(metrics);
 
-        if (getConfig().getBoolean("options.auto-update") &&
-                getDescription().getVersion().startsWith("Build")) {
-            new GuizhanBuildsUpdater(this, getFile(), "ybw0014", "LiteXpansion", "master", false).start();
+        if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Build")) {
+            GuizhanBuildsUpdaterWrapper.start(this, getFile(), "ybw0014", "LiteXpansion", "master", false);
         }
 
         registerEnchantments();
@@ -88,8 +87,6 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
         getLogger().log(Level.WARNING, " LiteXpansion 已开启削弱其他附属的发电机效率 ");
         getLogger().log(Level.WARNING, " 你可以在 LiteXpansion 附属的配置文件中关闭削弱 ");
         getLogger().log(Level.WARNING, " 设置 options.nerf-other-addons 为 false ");
-        getLogger().log(Level.WARNING, "###########################################");
-        getLogger().log(Level.SEVERE, " 如果你不是韩宗那你一定能看到上面这段话吧 ");
         getLogger().log(Level.WARNING, "###########################################");
 
         // Vanilla SF
