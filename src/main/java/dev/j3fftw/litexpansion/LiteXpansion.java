@@ -107,7 +107,7 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
         Reflections.setField(SlimefunItem.getById("ELEMENTAL_REACTOR"), "energyProducedPerTick", 8_192);
 
         // Galactifun
-        Reflections.setField(SlimefunItem.getById("FUSION_REACTOR"), "energyProducedPerTick", 16_192);
+        Reflections.setField(SlimefunItem.getById("FUSION_REACTOR"), "energyProducedPerTick", 16_384);
 
         // SupremeExpansion - just no...
         Reflections.setField(SlimefunItem.getById("SUPREME_GENERATOR"), "energy", 10_000);
