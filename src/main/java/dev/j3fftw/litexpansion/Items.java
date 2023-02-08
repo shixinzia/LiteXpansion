@@ -552,7 +552,7 @@ public final class Items {
     public static final SlimefunItemStack CONVERTER = new SlimefunItemStack(
         "CONVER",
         Material.COAL_BLOCK,
-        "&7Converter"
+        "&7转换机"
     );
 
     private static final Enchantment glowEnchant = Enchantment.getByKey(Constants.GLOW_ENCHANT);
