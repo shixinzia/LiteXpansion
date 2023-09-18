@@ -45,7 +45,7 @@ public class LiteXpansion extends JavaPlugin implements SlimefunAddon {
         metricsService.setup(metrics);
 
         if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Build")) {
-            GuizhanUpdater.start(this, getFile(), "ybw0014", "LiteXpansion", "master");
+            GuizhanUpdater.start(this, getFile(), "SlimefunGuguProject", "LiteXpansion", "master");
         }
 
         registerEnchantments();
